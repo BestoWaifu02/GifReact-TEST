@@ -14,9 +14,9 @@ export const getGifs = async( category ) => {
             url: img.images?.downsized_medium.url
         }
     })
-    //regersa un promesa de la coleccion de mis imagenes
 
     return gifs;
 
 
 }
+    //regersa un promesa de la coleccion de mis imagenes

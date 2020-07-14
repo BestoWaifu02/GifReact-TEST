@@ -1,24 +1,10 @@
 import React from 'react';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
-//import { getGifts } from "../helpers/getGifts";
+
 
 export const GifGrid = ({ category }) => {
- /*MI ENTENDIMIENTO 
-    Primero hacemos la peticion fetch con el async y el await, obnetemos los datos de la API y los filtramos para que solo traiga el id,title,url pero esto se saca de la data para despues ser mapeada y el array que te regresa se pone con la const gif la cual se va al setImages del hook y de ahi a la const de images para despues sacar sus propiedades  */
-/*   const [images, setImages] = useState([]);
-
-
-
-
-
-  //Este hook hace que no se vuelva a ejecutar la peticion porque tenemos un boton que agrega al contador un numero y por eso recarga el componente pero si usamos este hook la peticion solo se hara 1 vez
-  useEffect(() => {
-    //importamos el getGifts y como retorna una promesa usamos el then 
-    getGifts(category).then(setImages)
-  }, [category]); */
-
-  //cambio de nombre
+ 
     const { data:images, loading } = useFetchGifs( category );
 
     return (
@@ -42,3 +28,18 @@ export const GifGrid = ({ category }) => {
         </>
     )
 }
+/*MI ENTENDIMIENTO 
+    Primero hacemos la peticion fetch con el async y el await, obnetemos los datos de la API y los filtramos para que solo traiga el id,title,url pero esto se saca de la data para despues ser mapeada y el array que te regresa se pone con la const gif la cual se va al setImages del hook y de ahi a la const de images para despues sacar sus propiedades  */
+/*   const [images, setImages] = useState([]);
+
+
+
+
+
+  //Este hook hace que no se vuelva a ejecutar la peticion porque tenemos un boton que agrega al contador un numero y por eso recarga el componente pero si usamos este hook la peticion solo se hara 1 vez
+  useEffect(() => {
+    //importamos el getGifts y como retorna una promesa usamos el then 
+    getGifts(category).then(setImages)
+  }, [category]); */
+
+  //cambio de nombre

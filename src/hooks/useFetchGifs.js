@@ -10,7 +10,7 @@ export const useFetchGifs = ( category ) => {
     });
 
     useEffect( () => {
-//los efectos no pueden ser async
+
         getGifs( category )
             .then( imgs => {
                 
@@ -23,15 +23,17 @@ export const useFetchGifs = ( category ) => {
     }, [category])
 
 
+
+
+    return state; 
+
+}
+//los efectos no pueden ser async
 /* setTimeout(()=>{
         setstate({ data:[1,2,3,4,5],
             loading:false,
         })
     },3000) */
 
-    return state; // { data:[], loading: true };
+// { data:[], loading: true };
 //regresa la data que es array y el loading en true
-
-}
-
-
