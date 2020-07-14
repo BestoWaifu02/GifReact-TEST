@@ -28,12 +28,12 @@ export const useFetchGifs = ( category ) => {
     return state; 
 
 }
-//los efectos no pueden ser async
-/* setTimeout(()=>{
+/* los efectos no pueden ser async
+ setTimeout(()=>{
         setstate({ data:[1,2,3,4,5],
             loading:false,
         })
-    },3000) */
+    },3000) 
 
-// { data:[], loading: true };
-//regresa la data que es array y el loading en true
+ { data:[], loading: true };
+regresa la data que es array y el loading en true */

@@ -19,4 +19,4 @@ export const getGifs = async( category ) => {
 
 
 }
-    //regersa un promesa de la coleccion de mis imagenes
+    /* regersa un promesa de la coleccion de mis imagenes */

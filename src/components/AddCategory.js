@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
-// //vacio es undefind
+
 export const AddCategory = ({ setCategories }) => {
 
     const [inputValue, setInputValue] = useState(''); 
@@ -37,6 +37,6 @@ export const AddCategory = ({ setCategories }) => {
 AddCategory.propTypes = {
     setCategories: PropTypes.func.isRequired
 }
- //Cuando se envia un form este hace que la pagina se recargue por completo lo cual es malo porque react no recarga la pagina sino componentes, lo que se hace en este caso es quitar el evento de submit llamando la funcion handleSubmit
+ /* Cuando se envia un form este hace que la pagina se recargue por completo lo cual es malo porque react no recarga la pagina sino componentes, lo que se hace en este caso es quitar el evento de submit llamando la funcion handleSubmit
 
- //Nombre del componentes, al setCategories lo hace obligatorio :)
+ Nombre del componentes, al setCategories lo hace obligatorio :) */
