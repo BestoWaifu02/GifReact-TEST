@@ -16,7 +16,7 @@
 
 	1) NodeJS
     2) Api
-    3) Reack Hooks
+    3) React Hooks
 
 ### Testing
 
