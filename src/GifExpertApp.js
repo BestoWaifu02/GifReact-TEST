@@ -1,31 +1,24 @@
-import React, { useState } from 'react'
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import React, { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
+//Props default vacias para que en las pruebas podamos enviar un array
+export const GifExpertApp = ({ defaultprops = [] }) => {
+  const [categories, setCategories] = useState(defaultprops);
 
-export const GifExpertApp = () => {
-    
-    const [categories, setCategories] = useState(['Akame Ga Kill']);
- 
-    return (
-        <>
-            <h2>App By BestoWaifu02 (Diego Robledo Mendoza)</h2>
-            <AddCategory setCategories={ setCategories } />
-            <hr />
+  return (
+    <>
+      <h2>App By BestoWaifu02 (Diego Robledo Mendoza)</h2>
+      <AddCategory setCategories={setCategories} />
+      <hr />
 
-            <ol>
-                {
-                    categories.map( category  => (
-                        <GifGrid 
-                            key={ category }
-                            category={ category }
-                        />
-                    ))
-                }
-            </ol>
-
-        </>
-    )
-}
+      <ol>
+        {categories.map((category) => (
+          <GifGrid key={category} category={category} />
+        ))}
+      </ol>
+    </>
+  );
+};
 /*  const categories=['samurai X','One punch','SAO']
   const [categories, setcategories] = useState([
     "samurai X",
